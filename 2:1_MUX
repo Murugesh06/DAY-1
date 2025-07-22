@@ -1,0 +1,11 @@
+module two_one_mux(
+input I0,I1,S,
+output Y
+    );
+    wire n,a,b;
+
+not(n,S);
+and(a,n,I0);
+and(b,S,I1);
+or(Y,a,b);
+endmodule
