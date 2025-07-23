@@ -20,10 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Encoder_TB;
+module Decoder_TB;
 reg a0,a1;
 wire d0,d1,d2,d3;
-Encoder uut(a0,a1,d0,d1,d2,d3);
+Decoder uut(a0,a1,d0,d1,d2,d3);
 initial begin
 a1=0;a0=0;
 #10
