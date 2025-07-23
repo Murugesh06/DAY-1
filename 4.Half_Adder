@@ -10,7 +10,7 @@ endmodule
 
 Testbench code:
 
-module fulladdertb;
+module HalfAddertb;
 reg a,b;
 wire sum,carry;
 HalfAdder uut(a,b,sum,carry);
