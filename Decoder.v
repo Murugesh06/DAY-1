@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Encoder(a1,a0,d0,d1,d2,d3);
+module Decoder(a1,a0,d0,d1,d2,d3);
 input a1,a0;
 output d0,d1,d2,d3;
 wire a1_not,a0_not;
