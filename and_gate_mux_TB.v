@@ -1,0 +1,38 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 24.07.2025 10:29:32
+// Design Name: 
+// Module Name: and_gate_mux_TB
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module and_gate_mux_TB;
+reg a,b;
+wire out;
+and_gate_mux uut(a,b,out);
+initial begin
+a=0;b=0;
+#10
+a=0;b=1;
+#10
+a=1;b=0;
+#10
+a=1;b=1;
+#10
+$finish();
+end
+endmodule
